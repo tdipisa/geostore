@@ -93,6 +93,11 @@ public class GeoStoreShibbolethAuthenticationInterceptor extends AbstractPhaseIn
     	User user = null;
     	if(headers.containsKey(userHeader)) {
     		username = headers.get(userHeader).get(0);
+    	}
+    	if(headers.containsKey(userHeader.toLowerCase())) {
+    		username = headers.get(userHeader.toLowerCase()).get(0);
+    	}
+    	if(username != null) {
     		try {
 				user =  userService.get(username);
 			} catch (NotFoundServiceEx e) {
