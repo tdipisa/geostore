@@ -36,6 +36,7 @@
     <modules>
         <module>api</module>
         <module>impl</module>
+        <module>shibboleth</module>
         <module>client</module>
         <module>extjs</module>
         <module>test</module>

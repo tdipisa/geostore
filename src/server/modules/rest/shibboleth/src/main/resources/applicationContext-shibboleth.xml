@@ -24,7 +24,7 @@
 
     <bean id="geostoreAuthInterceptor" class="it.geosolutions.geostore.services.rest.shibboleth.GeoStoreShibbolethAuthenticationInterceptor">
     	<property name="userService" ref="userService"/>
-    	<property name="userHeader" value="AJP_Shib-Identita-CodiceFiscale"/>
+    	<property name="userHeader" value="Shib-Identita-CodiceFiscale"/>
     	<property name="createUnexistingUsers" value="true"/>
     </bean>
 </beans>

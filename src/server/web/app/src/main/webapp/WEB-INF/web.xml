@@ -9,6 +9,7 @@
 		<param-name>contextConfigLocation</param-name>
 		<param-value>
             classpath*:applicationContext.xml
+            classpath*:applicationContext-shibboleth.xml
         </param-value>
 	</context-param>
 

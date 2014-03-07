@@ -228,6 +228,12 @@
             
             <dependency>
                 <groupId>it.geosolutions.geostore</groupId>
+                <artifactId>geostore-rest-shibboleth</artifactId>
+                <version>${geostore-version}</version>
+            </dependency>
+            
+            <dependency>
+                <groupId>it.geosolutions.geostore</groupId>
                 <artifactId>geostore-rest-test</artifactId>
                 <version>${geostore-version}</version>
             </dependency>
