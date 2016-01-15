@@ -220,11 +220,11 @@
                 </configuration>
             </plugin>
             
-            <!-- <plugin>
+            <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>cobertura-maven-plugin</artifactId>
-                <version>2.2</version>
-            </plugin>-->
+                <version>2.7</version>
+            </plugin>
         </plugins>
     </reporting>
 
