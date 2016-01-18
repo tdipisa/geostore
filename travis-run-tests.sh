@@ -1,7 +1,7 @@
 #!/bin/bash
 
-echo $SOMEVAR
+echo $repoToken
 
 cd src/
 
-mvn clean install -Pextjs,h2_disk,auditing -D$repoToken 
+mvn clean install -Pextjs,h2_disk,auditing -DrepoToken=$repoToken 
