@@ -2,4 +2,4 @@
 
 cd src/
 
-mvn clean install cobertura:cobertura -Pextjs,h2_disk,auditing -DrepoToken=$repoToken
+mvn clean install -Pextjs,h2_disk,auditing
