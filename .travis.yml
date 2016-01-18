@@ -8,6 +8,6 @@ jdk:
   - openjdk7
 before_script:
   - echo "MAVEN_OPTS='-Xmx512m -XX:MaxPermSize=256m'" > ~/.mavenrc
-script: sh travis-run-tests.sh
+script: mvn clean install -Pextjs,h2_disk,auditing -DrepoToken=$repoToken 
 after_success:
   - mvn clean cobertura:cobertura coveralls:report

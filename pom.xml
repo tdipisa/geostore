@@ -234,7 +234,7 @@
 
 
     <modules>
-        <module>server</module>
+        <module>src</module>
     </modules>
 
 </project>
