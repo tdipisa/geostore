@@ -28,8 +28,14 @@
     <packaging>pom</packaging>
 
     <name>GeoStore - 0 Server Root</name>
-
-    <modules>
+	
+    <parent>
+        <groupId>it.geosolutions</groupId>
+        <artifactId>geostore</artifactId>
+        <version>1.4-SNAPSHOT</version>
+    </parent>
+    
+	<modules>
         <module>core</module>
         <module>modules</module>
         <module>web</module>
@@ -919,14 +925,6 @@
                </executions>
              </plugin>
         </plugins>
-
-        <extensions>
-            <extension>
-                <groupId>org.apache.maven.wagon</groupId>
-                <artifactId>wagon-ftp</artifactId>
-                <version>1.0-beta-6</version>
-            </extension>
-        </extensions>
 
     </build>
 
